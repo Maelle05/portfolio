@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Remachine';
+    src: url(font/RemachineScript_Personal_Use.woff);
+}
+@font-face{
+    font-family: 'Subway';
+    src: url(font/Subway-Black.woff);
+}
+body{
+    background-color: #EEDED7;
+    scroll-behavior: smooth;
+}
+
+html{ 
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+} 
+
+/* Menu */
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.hamburger-container{
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	/* background-color: red; */
+	top: 0;
+	right: 0;
+	margin-top: 3%;
+	margin-right: 3%;
+	z-index: 100;
+}
+
+.hamburger{
+	position: absolute;
+	background-color: #b5000f;
+	width: 30px;
+	height: 5px;
+	top: 50%;
+	transition: .2s;
+}
+
+.hamburger-container:hover .hamburger{
+	width: 52px;
+	transition: .2s;
+}
+
+.hamburger:before{
+	position: absolute;
+	display: block;
+	content: '';
+	top: 16px;
+	width: 52px;
+	height: 5px;
+	background-color: #b5000f;
+	transition: .2s;
+}
+
+.hamburger:after{
+	position: absolute;
+	display: block;
+	content: '';
+	top: -16px;
+	width: 52px;
+	height: 5px;
+	background-color: #b5000f;
+	transition: .2s;
+}
+
+.hamburger-container.active .hamburger{
+	background-color: rgba(0,0,0,0);
+}
+
+.hamburger-container.active .hamburger:before{
+	left: 0;
+	top: 0;
+	transform: rotate(45deg);
+	transition: .2s;
+}
+
+.hamburger-container.active .hamburger:after{
+	left: 0;
+	top: 0;
+	transform: rotate(-45deg);
+	transition: .2s;
+}
+
+.menu-container{
+	top: 0;
+	transform: translateX(100%);
+	position: fixed;
+	z-index: 99;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.81);
+	width: 100%;
+	height: 100vh;
+	transition: .4s;
+}
+
+.menu-container.active{
+	transform: translateX(0);
+	transition: .4s;
+}
+
+.menu-list{
+	height: 70%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.menu-list li a {
+	color: #eeded7;
+	font-family: 'Remachine';
+	font-size: 3.5vw;
+	position: relative;
+}
+
+.menu-list2 li a {
+	font-family: 'Subway';
+	font-size: 1.7vw;
+    position: relative;
+    padding-left: 100px;
+}
+
+.menu-list li a:hover{
+    color: #b5000f ;
+    transition: 0.5s;
+}
+
+.maelleRabouan{
+    width: 15vw;
+    position: absolute !important;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.bg_img{
+    width: 100%;
+    height: 100%;
+}
+
+.list-work{
+    font-family: 'Subway';
+    position: absolute;
+    font-size: 2vw;
+}
+
+.list-work1 a{
+    color: #b5000f;
+}
+
+.list-work2 a{
+    color: #EEDED7;
+}
+
+
+/*
+ * Mobile
+ */
+@media screen and (max-width: 768px) {
+    .menu-list li a {
+        font-size: 10vw;
+    }
+    
+    .menu-list2 li a {
+        font-size: 5vw;
+        padding-left: 70px;
+    }
+
+    .maelleRabouan{
+        width: 20vw;
+        position: absolute !important;
+        transform: translateX(-50%) translateY(-50%);
+        top: 7%;
+        left: 17%;
+    }
+
+    .fondphone{
+        display: block;
+        width: 100%;
+        margin-top: 40vh;
+    }
+
+    .fonddes{
+        display: none;
+    }
+
+    .fondtab{
+        display: none;
+    }
+}
+/*
+* Tablet
+*/
+@media screen and (min-width: 769px) and (max-width: 1407px) {
+    .menu-list li a {
+        font-size: 7vw;
+    }
+    
+    .menu-list2 li a {
+        font-size: 3vw;
+        padding-left: 70px;
+    }
+
+    .maelleRabouan{
+        width: 15vw;
+        position: absolute !important;
+        transform: translateX(-50%) translateY(-50%);
+        top: 5%;
+        left: 13%;
+    }
+
+    .fondphone{
+        display: none;
+    }
+
+    .fonddes{
+        display: none;
+    }
+
+    .fondtab{
+        display: block;
+        width: 100%;
+        margin-top: 45vh;
+    }
+}
+/*
+* FullHD
+*/
+@media screen and (min-width: 1408px) {
+    .fondphone{
+        display: none;
+    }
+
+    .fonddes{
+        display: block;
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    .fondtab{
+        display: none;
+    }
+
+    .list-work{
+        top: 67vh;
+        left: 70vw;
+    }
+}
+/*
+Smartphone en mode portait 
+*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {}
