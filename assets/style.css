@@ -21,6 +21,11 @@ html{
     font-size: 62.5%;
 } 
 
+.ancre{
+    position: relative;
+    top: -7vw;
+}
+
 /* Menu */
 
 li{
@@ -276,6 +281,51 @@ a{
 .separationworksimg1{
     width: 100%;
 }
+.separationworksimg2{
+    width: 100%;
+}
+
+.separationworksimg3{
+    width: 100%;
+}
+
+.worksvid{
+    margin-top: 15vh;
+}
+
+.worksAn{
+    margin-top: 25vh;
+}
+
+.scrollx{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+#style-bar::-webkit-scrollbar
+{
+	width: 12px;
+    background-color: #000000;
+}
+
+#style-bar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background-color: #B4000F;
+    
+}
+
+.cardvid {
+    display: inline-block;
+    }
+    
+.carddivvid{
+    width: 100%;
+    margin: 10vh 10vw 10vh 10vw;
+}
+
 
 
 /*
