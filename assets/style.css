@@ -184,6 +184,99 @@ a{
     color: #000;
 }
 
+/*****************Works***********************/
+.fondnoir{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    width: 100%;
+    position: relative;
+    top: -0.5vh;
+}
+
+.works{
+    font-family: 'Remachine';
+    color: #EEDED7;
+    padding-left: 10vw;
+    font-size: 4vw;
+    
+}
+
+.titreWorks{
+    display: flex;
+}
+
+.workskill{
+    color: #B4000F;
+    font-family: 'Subway';
+    font-size: 2.5vw;
+    padding-left: 4.5vw;
+    padding-top: 2.5%;
+}
+
+.carddiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15vh;
+    padding-left: 15vw;
+}
+
+.card{
+    background-color: #EEDED7;
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+}
+
+.card:hover{
+    width: 20.5vw;
+    height: 20.5vw;
+
+    transition: width 0.5s, height 0.5s;
+}
+
+.card2{
+    margin-left: 5vw;
+}
+
+.card3{
+    margin-left: 5vw;
+}
+
+.cardimg{
+    width: 84%;
+    height: 52%;
+    margin: 8% 15% 0 8%;
+    background-color: #B4000F;
+}
+
+.imgcard{
+    width: 100%;
+    height: 100%;
+}
+
+.cardtitre{
+    color: #B4000F;
+    font-family: 'Subway';
+    font-size: 170%;
+    padding-left: 7%;
+    padding-top: 7%;
+}
+
+.cardskill{
+    color: #B4000F;
+    font-family: 'Remachine';
+    position: relative;
+    float: right;
+    margin-right: 8% ;
+    margin-top: 5%;
+    font-size: xx-large;
+}
+
+.separationworksimg1{
+    width: 100%;
+}
+
 
 /*
  * Mobile
@@ -240,76 +333,71 @@ a{
     .link-container-home a{
         font-size: 2rem;
     }
+
+    /*****************Works***********************/
+        .fondnoir{
+            top: -3vh;
+        }
+
+        .works{
+            padding-left: 15vw;
+            font-size: 6vw;  
+        }
+
+        .workskill{
+            font-size: 4.5vw;
+            padding-left: 4.5vw;
+            padding-top: 4.5%;
+        }
+
+        .carddiv{
+            flex-direction: column;
+            margin-top: 5vh;
+            margin-left: 5vw;
+        }
+
+        .card{
+            width: 60vw;
+            height: 60vw;
+        }
+
+        .card:hover{
+            width: 60vw;
+            height: 60vw;
+        }
+
+        .card2{
+            margin-top: 5vh;
+            margin-left: 0;
+        }
+
+        .card3{
+            margin-top: 5vh;
+            margin-left: 0;
+        }
+
+        .cardimg{
+            width: 84%;
+            height: 52%;
+            margin: 8% 15% 0 8%;
+            background-color: #B4000F;
+        }
+
+        .cardtitre{
+            font-size: 170%;
+            padding-left: 7%;
+            padding-top: 7%;
+        }
+
+        .cardskill{
+            margin-right: 8% ;
+            margin-top: 5%;
+            font-size: xx-large;
+        }
+
 }
-/*
-* Tablet
-*/
-@media screen and (min-width: 768px) and (max-width: 899px) {
-    .menu-list li a {
-        font-size: 7vw;
-    }
-    
-    .menu-list2 li a {
-        font-size: 3vw;
-        padding-left: 70px;
-    }
-
-    .maelleRabouan{
-        width: 15vw;
-        position: absolute !important;
-        transform: translateX(-50%) translateY(-50%);
-        top: 5%;
-        left: 13%;
-    }
-
-    .push-all{
-        width: 100%;
-        margin-bottom: 30vh; 
-    }
 
 
-    .home-container{
-        background-image: url(img/fondtab.png);
-        background-size: cover;
-        height: 75vh;
-        /* margin-top: 42.5vh; */
-        position: unset;
-    }
-
-    .logo-home{
-        top: 5%;
-        left: 3%;
-        transform: translate(0,0);
-        height: 5vh;
-    }
-
-    .link-container-home{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 47%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        height: 30vh;
-        width: 80%;
-        justify-content: space-around;
-        font-family: 'Subway';
-    }
-
-    .link-container-home a{
-        font-size: 4rem;
-    }
-}
-/*
-* Petits ecrent
-*/
-@media screen and (min-width: 900px) and (max-width: 1389px) {
-
-    .list-work{
-        top: 67vh;
-        left: 70vw;
-    }
-}
 /*
 * FullHD
 */
