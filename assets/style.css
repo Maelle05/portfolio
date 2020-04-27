@@ -18,6 +18,7 @@ body{
 html{ 
     overflow-x: hidden; 
     scroll-behavior: smooth;
+    font-size: 62.5%;
 } 
 
 /* Menu */
@@ -142,31 +143,45 @@ a{
     transition: 0.5s;
 }
 
-.maelleRabouan{
-    width: 15vw;
-    position: absolute !important;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 50%;
-}
-
-.bg_img{
+.home-container{
+    height: 100vh;
     width: 100%;
-    height: 100%;
+    background-image: url(img/fond.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
 
-.list-work{
-    font-family: 'Subway';
+.logo-home{
     position: absolute;
-    font-size: 2vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15vh;
 }
 
-.list-work1 a{
+.link-container-home{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 16%;
+    right: 10%;
+    height: 30vh;
+    justify-content: space-around;
+    font-family: 'Subway';
+}
+
+.link-container-home a{
     color: #b5000f;
+    font-size: 3rem;
 }
 
-.list-work2 a{
+.link-container-home a:nth-child(3),.link-container-home a:nth-child(4){
     color: #EEDED7;
+}
+
+.link-container-home a:hover{
+    color: #000;
 }
 
 
@@ -204,6 +219,41 @@ a{
     .fondtab{
         display: none;
     }
+
+    .push-all{
+        width: 100%;
+        margin-top: 44vh;
+    }
+
+    .home-container{
+        background-image: url(img/fondphone.png);
+        height: 60vh;
+        position: unset;
+    }
+
+    .logo-home{
+        top: 5%;
+        left: 3%;
+        transform: translate(0,0);
+        height: 5vh;
+    }
+
+    .link-container-home{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 30vh;
+        width: 80%;
+        justify-content: space-around;
+        font-family: 'Subway';
+    }
+
+    .link-container-home a{
+        font-size: 2rem;
+    }
 }
 /*
 * Tablet
@@ -238,6 +288,44 @@ a{
         display: block;
         width: 100%;
         margin-top: 45vh;
+    }
+
+
+    .push-all{
+        width: 100%;
+        margin-bottom: 30vh; 
+    }
+
+
+    .home-container{
+        background-image: url(img/fondtab.png);
+        height: 140vh;
+        /* margin-top: 42.5vh; */
+        position: unset;
+    }
+
+    .logo-home{
+        top: 5%;
+        left: 3%;
+        transform: translate(0,0);
+        height: 5vh;
+    }
+
+    .link-container-home{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 30vh;
+        width: 80%;
+        justify-content: space-around;
+        font-family: 'Subway';
+    }
+
+    .link-container-home a{
+        font-size: 2rem;
     }
 }
 /*
