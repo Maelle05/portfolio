@@ -173,7 +173,7 @@ a{
 
 .link-container-home a{
     color: #b5000f;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .link-container-home a:nth-child(3),.link-container-home a:nth-child(4){
@@ -206,23 +206,9 @@ a{
         left: 17%;
     }
 
-    .fondphone{
-        display: block;
-        width: 100%;
-        margin-top: 40vh;
-    }
-
-    .fonddes{
-        display: none;
-    }
-
-    .fondtab{
-        display: none;
-    }
-
     .push-all{
         width: 100%;
-        margin-top: 44vh;
+        margin-top: 40vh;
     }
 
     .home-container{
@@ -258,7 +244,7 @@ a{
 /*
 * Tablet
 */
-@media screen and (min-width: 769px) and (max-width: 1407px) {
+@media screen and (min-width: 768px) and (max-width: 899px) {
     .menu-list li a {
         font-size: 7vw;
     }
@@ -276,21 +262,6 @@ a{
         left: 13%;
     }
 
-    .fondphone{
-        display: none;
-    }
-
-    .fonddes{
-        display: none;
-    }
-
-    .fondtab{
-        display: block;
-        width: 100%;
-        margin-top: 45vh;
-    }
-
-
     .push-all{
         width: 100%;
         margin-bottom: 30vh; 
@@ -299,7 +270,8 @@ a{
 
     .home-container{
         background-image: url(img/fondtab.png);
-        height: 140vh;
+        background-size: cover;
+        height: 75vh;
         /* margin-top: 42.5vh; */
         position: unset;
     }
@@ -325,26 +297,23 @@ a{
     }
 
     .link-container-home a{
-        font-size: 2rem;
+        font-size: 4rem;
+    }
+}
+/*
+* Petits ecrent
+*/
+@media screen and (min-width: 900px) and (max-width: 1389px) {
+
+    .list-work{
+        top: 67vh;
+        left: 70vw;
     }
 }
 /*
 * FullHD
 */
-@media screen and (min-width: 1408px) {
-    .fondphone{
-        display: none;
-    }
-
-    .fonddes{
-        display: block;
-        width: 100%;
-        margin-top: 10vh;
-    }
-
-    .fondtab{
-        display: none;
-    }
+@media screen and (min-width: 1390px) {
 
     .list-work{
         top: 67vh;
